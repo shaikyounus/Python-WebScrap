@@ -15,8 +15,8 @@ from pathlib import Path
 html = Template(Path('index.html').read_text())
 
 email=EmailMessage()
-email['from']='YOUNUS'
-email['to']='mohammadyounus.sk@vitap.ac.in'
+email['from']='From Gmail'
+email['to']='To Gmail'
 email['subject']='Hey I got the data of Linkedin Profiles of your Search Query'
 
 
@@ -85,28 +85,11 @@ for i in linkedin_urls:
     with smtplib.SMTP(host='smtp.gmail.com',port=587)as smtp:
         smtp.ehlo()
         smtp.starttls()
-        smtp.login('shaikyounusshaik@gmail.com','Sk#9160296991')
+        smtp.login('Your Gmail','Your Gmail Password')
         smtp.send_message(email)
         
     
 print('\n')
 print('Program Terminated')
-"""
-import smtplib
-from email.message import EmailMessage
 
 
-email=EmailMessage()
-email['from']='YOUNUS'
-email['to']='mohammadyounus.sk@vitap.ac.in'
-email['subject']='Hey My first Python Email'
-
-email.set_content('Entra  chala cheyyali inka')
-
-with smtplib.SMTP(host='smtp.gmail.com',port=587)as smtp:
-    smtp.ehlo()
-    smtp.starttls()
-    smtp.login('shaikyounusshaik@gmail.com','Sk#9160296991')
-    smtp.send_message(email)
-    print('Done')
-"""
