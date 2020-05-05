@@ -1,6 +1,6 @@
 search_query = 'site:linkedin.com/in/ AND "Amazon SDE" AND "Hyderabad"'
-file_name = 'results_file.csv'
+## Search query you can type anything between " "
 
-linkedin_username = 'shaikyounusshaik@gmail.com'
-linkedin_password = 'shakeela123'
+linkedin_username = 'Your Linkedin Username'
+linkedin_password = 'Your Linkedin Password'
 
